@@ -12,8 +12,8 @@ permissions:
   security-events: write
 
 env:
-  BACKEND_IMAGE: trainwithshubham/devboard-backend
-  FRONTEND_IMAGE: trainwithshubham/devboard-frontend
+  BACKEND_IMAGE: <Docker hub username>/devboard-backend  #update with your docker hub username  
+  FRONTEND_IMAGE: <Docker hub username>/devboard-frontend #update with your docker hub username 
 
 jobs:
   trivy:
@@ -23,9 +23,9 @@ jobs:
       matrix:
         include:
           - name: backend
-            image: trainwithshubham/devboard-backend
+            image: <Docker hub username>/devboard-backend #update with your docker hub username 
           - name: frontend
-            image: trainwithshubham/devboard-frontend
+            image: <Docker hub username>/devboard-frontend #update with your docker hub username 
     steps:
       - name: Checkout
         uses: actions/checkout@v4

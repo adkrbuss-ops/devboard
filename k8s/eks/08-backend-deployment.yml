@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: devboard-backend
-        image: trainwithshubham/devboard-backend:817b5cf
+        image: <Docker hub username>/devboard-backend:817b5cf #update with your docker hub username
         ports:
         - containerPort: 8080
         env:

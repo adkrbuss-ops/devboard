@@ -298,7 +298,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LondheShubham153/devboard-starter.git
+    repoURL: https://github.com/adkrbuss-ops/devboard-starter.git
     targetRevision: main
     path: k8s/eks
   destination:

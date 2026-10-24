@@ -8,8 +8,8 @@ on:
         value: ${{ jobs.build-and-push.outputs.image_tag }}
 
 env:
-  BACKEND_IMAGE: trainwithshubham/devboard-backend
-  FRONTEND_IMAGE: trainwithshubham/devboard-frontend
+  BACKEND_IMAGE: <Docker hub username>/devboard-backend #update with your docker hub username 
+  FRONTEND_IMAGE: <Docker hub username>/devboard-frontend #update with your docker hub username 
 
 jobs:
   build-and-push:
